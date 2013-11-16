@@ -71,13 +71,14 @@ html, body {
 	cursor: pointer;
 }
 
-.top-bar .brand {
+.top-bar .brand{
 	padding: 13px;
 	font-size: 24px;
 	cursor: pointer;
 	color: #ebebeb;
 	text-decoration: none;
 }
+
 
 .left {
 	float: left;
@@ -97,43 +98,72 @@ html, body {
 	cursor: pointer;
 }
 
-.right li a, a:hover {
+.right li a {
 	color: inherit;
 	text-decoration: none;
 }
-
-/*.services{
-	background: #aaa;
-}*/
-
-.second-screen {
-	width: 100%;
-	height: 100%;
-	/*position: relative;*/
-	/*overflow: hidden;*/
-	background: #ebebeb;
+.right a:hover {
+	font-size: 16.8px;
+	color: #fefefe;
+	text-decoration: none;
 }
 
+/* 
+	SERVICES, TRANING, ABOUT US, CONTACT
+*/
+/*SERVICES*/
+.second-screen {
+	width: 100%;
+	min-height: 100%;
+	background: #ebebeb;
+}
+.second-screen .services {
+	position: absolute;
+	font-size: 20px;
+	font-style: inherit;
+	margin-left: 40px;
+	color: #e17352;
+	text-transform: uppercase;
+}
+/*TRANING*/
 .third-screen {
 	width: 100%;
 	height: 100%;
-	/*position: relative;*/
-	/*overflow: hidden;*/
 	background: #e17352;
 }
-
+.third-screen .training {
+	position: absolute;
+	font-size: 20px;
+	font-style: inherit;
+	margin-left: 40px;
+	color: #ebebeb;
+	text-transform: uppercase;
+}
+/*ABOUT*/
 .fourth-screen {
 	width: 100%;
 	height: 100%;
-	/*position: relative;*/
-	/*overflow: hidden;*/
 	background: #ebebeb;
 }
-
+.fourth-screen .about {
+	position: absolute;
+	font-size: 20px;
+	font-style: inherit;
+	margin-left: 40px;
+	color: #e17352;
+	text-transform: uppercase;
+}
+/*CONTACT*/
 .fifth-screen {
 	width: 100%;
 	height: 100%;
-	/*position: relative;*/
-	/*overflow: hidden;*/
 	background: #e17352;
+}
+.fifth-screen .contact {
+	position: absolute;
+	font-size: 20px;
+	font-style: inherit;
+	margin-left: 40px;
+	color: #ebebeb;
+	text-transform: uppercase;
 }
