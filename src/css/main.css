@@ -33,7 +33,7 @@ html, body {
 
 .first-screen .slogan {
 	position: absolute;
-	top: 74%;
+	bottom: 135px;
 	right: 150px;
 	font-size: 16px;
 	font-style: italic;
