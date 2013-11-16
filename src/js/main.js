@@ -3,6 +3,12 @@ $( document ).ready(function() {
   		horizontalScrolling: false,
   		positionProperty: 'transform'
     });
+    var preventDefault = function(selector){
+    	$(selector).on("click", function (e) {
+	        e.preventDefault();
+	    });
+    }
+    preventDefault('.top-bar a');
     $(window).scroll(function(e){ 
 		var topbar = $('.top-bar');
 		if ($(this).height()-$(this).scrollTop() <= 53){ 
@@ -14,4 +20,10 @@ $( document ).ready(function() {
 			});
 		}
 	});
+	window.scrolltopost1 = function(){
+	console.log('an');
+	$('html,body').animate({
+        scrollTop: $('#post1').offset().top-53
+    }, 500);
+}
 });
