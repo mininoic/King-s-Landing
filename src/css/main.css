@@ -19,6 +19,30 @@ html, body {
 	background: radial-gradient(ellipse at center,  #ef6429 0%,#b74d1f 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef6429', endColorstr='#b74d1f',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 }
+
+.big-logo {
+	position: absolute;
+	width: 240px;
+	left: 50%;
+	margin-left: -120px;
+	height: 296px;
+	top: 50%;
+	margin-top: -170px;
+	background: url('../img/biglogo.png') no-repeat;	
+}
+
+.first-screen .slogan {
+	position: absolute;
+	top: 74%;
+	right: 150px;
+	font-size: 16px;
+	font-style: italic;
+	text-align: right;
+	color: #ebebeb;
+	padding-right: 10px;
+	border-right: 3px solid #ebebeb;
+}
+
 .top-bar {
 	position: absolute;
 	bottom: 0;
@@ -65,18 +89,4 @@ html, body {
 
 .right div {
 	float: right;
-}
-
-
-
-.big-logo {
-	position: absolute;
-	width: 240px;
-	left: 50%;
-	margin-left: -120px;
-	height: 296px;
-	top: 50%;
-	margin-top: -170px;
-	background: url('../img/biglogo.png') no-repeat;
-	
 }
