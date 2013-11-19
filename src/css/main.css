@@ -18,6 +18,7 @@ html, body {
 	background: -ms-radial-gradient(center, ellipse cover,  #ef6429 0%,#b74d1f 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #ef6429 0%,#b74d1f 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef6429', endColorstr='#b74d1f',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	/*z-index: 99;*/
 }
 
 .big-logo {
@@ -52,6 +53,7 @@ html, body {
 	font-size: 16px;
 	color: #ebebeb;
 	text-transform: uppercase;
+	z-index: 10;
 }
 
 .top-bar .button {
@@ -63,7 +65,7 @@ html, body {
 	height: 100%;
 }
 
-.top-bar .logo {
+.top-bar .small-logo {
 	margin-left: 18px;
 	width: 31px;
 	height: 100%;
@@ -103,67 +105,91 @@ html, body {
 	text-decoration: none;
 }
 .right a:hover {
-	font-size: 16.8px;
-	color: #fefefe;
+	color: #ffffff;
 	text-decoration: none;
+	border-bottom: 4px solid #e17352;
 }
-
-/* 
-	SERVICES, TRANING, ABOUT US, CONTACT
-*/
-/*SERVICES*/
-.second-screen {
+/*SERVICES _ ABOUT*/
+#post1, #post3 {
 	width: 100%;
 	min-height: 100%;
 	background: #ebebeb;
 }
-.second-screen .services {
-	position: absolute;
-	font-size: 20px;
-	font-style: inherit;
-	margin-left: 40px;
-	color: #e17352;
-	text-transform: uppercase;
-}
-/*TRANING*/
-.third-screen {
+/*TRANING _ CONTACT*/
+#post2, #post4 {
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 	background: #e17352;
 }
-.third-screen .training {
+
+.title {
 	position: absolute;
-	font-size: 20px;
+	font-size: 30px;
 	font-style: inherit;
+	margin-top: 30px;
 	margin-left: 40px;
-	color: #ebebeb;
 	text-transform: uppercase;
+	font-weight: bold;
 }
-/*ABOUT*/
-.fourth-screen {
-	width: 100%;
-	height: 100%;
-	background: #ebebeb;
-}
-.fourth-screen .about {
-	position: absolute;
-	font-size: 20px;
-	font-style: inherit;
-	margin-left: 40px;
+
+.services .title, .about .title {
 	color: #e17352;
-	text-transform: uppercase;
 }
-/*CONTACT*/
-.fifth-screen {
-	width: 100%;
-	height: 100%;
-	background: #e17352;
-}
-.fifth-screen .contact {
-	position: absolute;
-	font-size: 20px;
-	font-style: inherit;
-	margin-left: 40px;
+.training .title, .contact .title{
 	color: #ebebeb;
+}
+
+.services .col1, .services .col2, .services .col3{
+	position: absolute;
+	margin-top: 170px;
+	text-align: left;
+	color: #e17352;
+	width: 25%;
+}
+.services .mininoic {
+	position: absolute;
+	color: #e17352;
+	padding-bottom: 5px;
+	margin-top: 80px;
+	text-align: right;
+	font-size: 25px;
+	font-weight: bold;
 	text-transform: uppercase;
+	margin-left: 35%;
+	width: 55%;
+	border-bottom: 3px solid #e17352;
+}
+.mininoic .description{
+	color: #8a8683;
+	font-size: 18px;
+	text-transform: none;
+}
+
+.col1{
+	margin-left: 5%;
+}
+.col2{
+	margin-left: 35%;
+}
+.col3{
+	margin-left: 65%;
+}
+
+.subtitle{
+	text-align: right;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.desr{
+	margin-top: 200px;
+}
+
+.training .col1, .training .col2, .training .col3{
+	position: absolute;
+	margin-top: 120px;
+	/*margin-left: 60px;*/
+	text-align: left;
+	color: #ebebeb;
+	width: 25%;
 }
