@@ -147,16 +147,13 @@ a, a:hover, a:active {
 }
 /*SERVICES _ ABOUT*/
 #post1, #post3 {
-	background: #ebebeb;
+	background: #fff;
 }
 /*TRANING _ CONTACT*/
 #post2, #post4 {
 	background: #e17352;
 }
 
-#post4 {
-	height: 100%;
-}
 
 .title {
 	font-size: 50px;
@@ -168,14 +165,14 @@ a, a:hover, a:active {
 
 .training .title {
 	padding-bottom: 10px;
-	border-bottom: 3px solid #ebebeb;
+	border-bottom: 3px solid #fff
 }
 
 .services .title, .about .title {
 	color: #e17352;
 }
 .training .title, .contact .title{
-	color: #ebebeb;
+	color: #fff;
 }
 
 .post .col .image {
@@ -196,7 +193,7 @@ a, a:hover, a:active {
 }
 
 .training .col .image {
-	background-color: #ebebeb;
+	background-color: #fff;
 }
 
 .col .col {
@@ -211,7 +208,7 @@ a, a:hover, a:active {
 }
 
 .training .col .col {
-	color: #ebebeb;
+	color: #fff;
 }
 
 .col {
@@ -376,9 +373,11 @@ a, a:hover, a:active {
 	text-decoration: underline;
 }
 .footer{
-	color: #fff;
+	background-color: #ebebeb;
+	color: #c35636;
 	width: 100%;
+	height: 5em;
+	padding-top: 1em;
 	text-align: center;
-	position: absolute;
-	bottom: 153px;
+	position: relative;
 }
