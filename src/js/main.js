@@ -22,7 +22,7 @@ $( document ).ready(function() {
 	});
 	window.scrolltopost0 = function(){
     	$('html,body').animate({
-    		scrollTop: $('#post0').offset().top-53
+    		scrollTop: $('#post0').offset().top
     	}, 500);
     		
     }
@@ -30,27 +30,27 @@ $( document ).ready(function() {
 	window.scrolltopost1 = function(){
 	//console.log('an');
 		$('html,body').animate({
-       		scrollTop: $('#post1').offset().top-53
+       		scrollTop: $('#post1').offset().top
    		}, 500);
     }
 
     window.scrolltopost2 = function(){
     	$('html,body').animate({
-    		scrollTop: $('#post2').offset().top-53
+    		scrollTop: $('#post2').offset().top
     	}, 500);
     		
     }
 
     window.scrolltopost3 = function(){
     	$('html,body').animate({
-    		scrollTop: $('#post3').offset().top-53
+    		scrollTop: $('#post3').offset().top
     	}, 500);
     		
     }
 
     window.scrolltopost4 = function(){
     	$('html,body').animate({
-    		scrollTop: $('#post4').offset().top-53
+    		scrollTop: $('#post4').offset().top
     	}, 500);
     		
     }
