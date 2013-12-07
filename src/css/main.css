@@ -114,6 +114,9 @@ html, body {
 .right {
 	float: right;
 }
+.right .menu{
+	visibility: hidden;
+}
 
 ul, li {
 	list-style: none;
@@ -380,11 +383,37 @@ a, a:hover, a:active {
 	height: 5em;
 	padding-top: 1em;
 	text-align: center;
-	position: relative;
-}
+	position: relativer}
 
 @media screen and (max-width: 810px){
+
+	.top-bar {
+		overflow: visible;
+	}
 		
+	.right ul {
+		display: block;
+	}	
+	.right .menu{
+		visibility: visible;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.right .dropdown{
+		visibility: hidden;
+	}
+	.right:hover .dropdown{
+		visibility: visible;
+	}
+
+	.right li {
+		text-align: right;
+		background-color: #000;
+		float: none;
+		display: block;
+	}
+
 		.first-screen .slogan {
 			position: absolute;
 			bottom: 70px;
@@ -392,9 +421,6 @@ a, a:hover, a:active {
 			font-size: 16px;
 			color: #ebebeb;
 			padding-right: 8px;
-		}
-		.right{
-			float: none;
 		}
 		.title{
 			text-align: center;
