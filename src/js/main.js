@@ -13,11 +13,13 @@ $( document ).ready(function() {
 		var topbar = $('.top-bar');
 		if ($(this).height()-$(this).scrollTop() <= 53){ 
 			topbar.css({'position': 'fixed', 'top': '0px'}); 
+            topbar.removeClass('on-post0');
 		} else {
 			topbar.css({
 				'position': 'absolute',
 				'top': 'auto'
 			});
+            topbar.addClass('on-post0');
 		}
 	});
 	window.scrolltopost0 = function(){
