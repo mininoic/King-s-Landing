@@ -62,7 +62,7 @@ html, body {
 	bottom: 0;
 	width: 100%;
 	height: 53px;
-	background: #000;
+	background: #222;
 	font-size: 16px;
 	color: #ebebeb;
 	text-transform: uppercase;
@@ -136,7 +136,7 @@ a, a:hover, a:active {
 	color: inherit;
 }
 .right a:hover {
-	color: #ffffff;
+	color: #f6f6f6;
 	border-bottom: 4px solid #e17352;
 }
 
@@ -151,11 +151,11 @@ a, a:hover, a:active {
 }
 /*SERVICES _ ABOUT*/
 #post1, #post3 {
-	background: #fff;
+	background: #f6f6f6;
 }
 
 #post2 .content,#post4 .content {
-	padding: 0px 50px;
+	padding: 40px 50px;
 	background-color: rgba(0,0,0, 0.7);
 
 }
@@ -167,7 +167,7 @@ a, a:hover, a:active {
 	/*background: #e17352;*/
 	/*background: url('../img/bg4.jpg') center center no-repeat;*/
 	/*background-color: #f68f67;*/
-	/*color: #ffffff;*/
+	/*color: #f6f6f6fff;*/
 	box-shadow: 0px 0px 100px -27px #000 inset;
 }
 
@@ -176,7 +176,7 @@ a, a:hover, a:active {
 	left: 0;
 	position: fixed;
 	width: 100%;
-	height: auto;
+	min-height: 100%;
 	z-index: -1;
 }
 
@@ -185,7 +185,7 @@ a, a:hover, a:active {
 	font-size: 50px;
 	width: 100%;
 	font-style: inherit;
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 	text-transform: uppercase;
 	font-weight: bold;
 
@@ -193,7 +193,7 @@ a, a:hover, a:active {
 
 .training .title {
 	padding-bottom: 10px;
-	border-bottom: 3px solid #fff
+	border-bottom: 3px solid #f6f6f6
 }
 
 .services .title, .about .title {
@@ -201,7 +201,7 @@ a, a:hover, a:active {
 
 }
 .training .title, .contact .title{
-	color: #fff;
+	color: #f6f6f6;
 }
 
 .post .col .image {
@@ -215,14 +215,14 @@ a, a:hover, a:active {
 }
 
 .services .col .image {
-	background-color: #8a8683;
+	background-color: #57504C;
 }
 .services .col .col:hover .image {
 	background-color: #e17352;
 }
 
 .training .col .image {
-	background-color: #fff;
+	background-color: #f6f6f6;
 }
 
 .col .col {
@@ -237,7 +237,7 @@ a, a:hover, a:active {
 }
 
 .training .col .col {
-	color: #fff;
+	color: #f6f6f6;
 }
 
 .col {
@@ -250,7 +250,7 @@ a, a:hover, a:active {
 }
 
 .services .col .col {
-	color: #8a8683;
+	color: #57504C;
 }
 
 .services .row {
@@ -308,7 +308,7 @@ a, a:hover, a:active {
 	border-bottom: 3px solid #e17352;
 }
 .description{
-	color: #8a8683;
+	color: #57504C;
 	font-size: 18px;
 	text-transform: none;
 }
@@ -364,7 +364,7 @@ a, a:hover, a:active {
 	font-weight: bold;
 }
 .about .bkgm .bkgm-1 .brand span{
-	color: #8a8683;
+	color: #57504C;
 	font-size: 18px;
 	text-transform: none;
 }
@@ -384,21 +384,21 @@ a, a:hover, a:active {
 	width: 70%;
 	height: 60px;
 	margin-top: 30px;
-	border-top: 3px solid #fff;
-	border-left: 3px solid #fff;
+	border-top: 3px solid #f6f6f6;
+	border-left: 3px solid #f6f6f6;
 }
 .contact .desr{
 	font-size: 20px;
 	line-height: 2em;
 	margin-top: -1em;
 	margin-left: 6%;
-	color: #fff;
+	color: #f6f6f6;
 }
 .contact .desr .intern{
 	margin-top: 50px;
 }
 .contact .desr .intern a{
-	color: #fff;
+	color: #f6f6f6;
 	text-decoration: underline;
 }
 .footer{
