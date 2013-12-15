@@ -443,6 +443,13 @@ a, a:hover, a:active {
 
 @media screen and (max-width: 810px){
 
+	#post2, #post4 {
+		-webkit-background-size: auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
+		background-size: auto;
+	}
+
 	.top-bar {
 		height: 53px;
 	}
