@@ -1,8 +1,8 @@
 $( document ).ready(function() {
-    // $.stellar({
-  		// horizontalScrolling: false,
-  		// positionProperty: 'transform'
-    // });
+     $.stellar({
+  		 horizontalScrolling: false,
+  		 positionProperty: 'transform'
+     });
     var preventDefault = function(selector){
     	$(selector).on("click", function (e) {
 	        e.preventDefault();
