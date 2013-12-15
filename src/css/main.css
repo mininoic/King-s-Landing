@@ -441,18 +441,9 @@ img.background{
 	position: relative;
 }
 
-@media screen and (max-width: 810px){
-
+@media screen and (max-width: 669px){
 	.top-bar {
 		height: 53px;
-	}
-
-	#post2, #post4 {
-		background: transparent!important;
-	}
-
-	img.background {
-		display: block;
 	}
 
 	.top-bar .button.menu{
@@ -487,6 +478,19 @@ img.background{
 
 	.top-bar ul.right li:hover {
 		background-color: #b74d1f;
+	}
+}
+
+@media screen and (max-width: 810px){
+
+	
+
+	#post2, #post4 {
+		background: transparent!important;
+	}
+
+	img.background {
+		display: block;
 	}
 
 		.first-screen .slogan {
