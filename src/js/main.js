@@ -42,6 +42,20 @@ $( document ).ready(function() {
         } else {
             topbar.removeClass('top-bar-top');
         }
+
+        $('img.background').each(function(){
+            var p = $(this).parent();
+            var top_offset = p.offset().top-$(window).scrollTop();
+            var bot_offset = top_offset+p.outerHeight()-$(window).height();
+            $(this).css({
+                clip: "rect("+
+                    top_offset+"px,"+
+                    $(window).width()+"px,"+
+                    $(window).height()+"px,"+
+                    0+"px)"
+            });
+        })
+
     });
 
     $('.button.menu').click(function(){
