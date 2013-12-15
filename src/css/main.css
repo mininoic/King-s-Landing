@@ -142,7 +142,6 @@ a, a:hover, a:active {
 
 .post {
 	position: relative;
-	min-height: 100%;
 	padding: 40px 120px;
 }
 
@@ -402,13 +401,14 @@ a, a:hover, a:active {
 	text-decoration: underline;
 }
 .footer{
+	font-size: 14px;
 	background-color: #ebebeb;
-	color: #c35636;
+	color: #57504C;
 	width: 100%;
-	height: 5em;
-	padding-top: 1em;
+	line-height: 3em;
 	text-align: center;
-	position: relativer}
+	position: relative;
+}
 
 @media screen and (max-width: 810px){
 
