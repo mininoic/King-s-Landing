@@ -35,20 +35,22 @@ $( document ).ready(function() {
         window.addEventListener("touchmove", dispatchScroll);
         window.addEventListener("touchend", deactivateOnScroll);
     }
-
+    var w = $(window);
+    var tbh = topbar.height();
+    var 
     window.addEventListener("scroll", function() {
-        if ($(window).height()-$(window).scrollTop() <= topbar.height()){
+        if (w.height()-w.scrollTop() <= tbh){
             topbar.addClass('top-bar-top');
         } else {
             topbar.removeClass('top-bar-top');
         }
-        var w = $(window);
+        
         $('img.background').each(function(){
             $(this).css({
                 clip: "rect("+
                     ($(this).parent().offset().top-w.scrollTop())+"px,"+
-                    w.width()+"px,"+
-                    w.height()+"px,"+
+                    100+"%,"+
+                    100+"%,"+
                     0+"px)"
             });
         })
