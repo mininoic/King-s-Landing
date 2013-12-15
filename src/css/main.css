@@ -184,8 +184,7 @@ a, a:hover, a:active {
 
 #post4 {
 	background: url(../img/bg3.jpg) no-repeat center center fixed;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg3.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg3.jpg', sizingMethod='scale')";
+	
 }
 /*TRANING _ CONTACT*/
 #post2, #post4 {
@@ -194,10 +193,15 @@ a, a:hover, a:active {
 	/*background-color: #f68f67;*/
 	/*color: #f6f6f6fff;*/
 	box-shadow: 0px 0px 100px -27px #000 inset;
+}
+
+@media screen and (min-width: 811px){
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg3.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg3.jpg', sizingMethod='scale')";
 }
 
 img.background{
@@ -442,14 +446,6 @@ img.background{
 }
 
 @media screen and (max-width: 810px){
-
-	img.background {
-		display: none;
-	}
-	
-	#post2, #post4 {
-
-	}
 
 	.top-bar {
 		height: 53px;
