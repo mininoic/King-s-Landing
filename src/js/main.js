@@ -23,7 +23,7 @@ $( document ).ready(function() {
     };
 
     var activateOnScroll = function() {
-        ivScroll = setInterval(dispatchScroll, 20);
+        ivScroll = setInterval(dispatchScroll, 0);
     }
 
     var deactivateOnScroll = function() {
@@ -42,16 +42,13 @@ $( document ).ready(function() {
         } else {
             topbar.removeClass('top-bar-top');
         }
-
+        var w = $(window);
         $('img.background').each(function(){
-            var p = $(this).parent();
-            var top_offset = p.offset().top-$(window).scrollTop();
-            var bot_offset = top_offset+p.outerHeight()-$(window).height();
             $(this).css({
                 clip: "rect("+
-                    top_offset+"px,"+
-                    $(window).width()+"px,"+
-                    $(window).height()+"px,"+
+                    ($(this).parent().offset().top-w.scrollTop())+"px,"+
+                    w.width()+"px,"+
+                    w.height()+"px,"+
                     0+"px)"
             });
         })
