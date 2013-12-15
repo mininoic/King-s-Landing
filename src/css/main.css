@@ -441,13 +441,19 @@ a, a:hover, a:active {
 	position: relative;
 }
 
+img.background {
+	display: none;
+}
+
 @media screen and (max-width: 810px){
 
-	#post2, #post4 {
-		-webkit-background-size: auto;
-		-moz-background-size: auto;
-		-o-background-size: auto;
-		background-size: auto;
+	img.background {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		height: 100%;
 	}
 
 	.top-bar {
