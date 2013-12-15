@@ -37,7 +37,9 @@ $( document ).ready(function() {
     }
     var w = $(window);
     var tbh = topbar.height();
-    var 
+    var p4 = $('#post4');
+    var p4b = p4.children('img.background');
+    var p4o = p4.offset().top;
     window.addEventListener("scroll", function() {
         if (w.height()-w.scrollTop() <= tbh){
             topbar.addClass('top-bar-top');
@@ -45,14 +47,12 @@ $( document ).ready(function() {
             topbar.removeClass('top-bar-top');
         }
         
-        $('img.background').each(function(){
-            $(this).css({
-                clip: "rect("+
-                    ($(this).parent().offset().top-w.scrollTop())+"px,"+
-                    100+"%,"+
-                    100+"%,"+
-                    0+"px)"
-            });
+        p4b.css({
+            clip: "rect("+
+                (p4o-w.scrollTop())+"px,"+
+                w.width()+"px,"+
+                w.height()+"px,"+
+                0+"px)"
         })
 
     });
