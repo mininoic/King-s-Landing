@@ -176,7 +176,17 @@ a, a:hover, a:active {
 	background-color: rgba(0,0,0, 0.7);
 
 }
+#post2 {
+	background: url(../img/bg4.jpg) no-repeat center center fixed;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg4.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg4.jpg', sizingMethod='scale')";
+}
 
+#post4 {
+	background: url(../img/bg3.jpg) no-repeat center center fixed;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg3.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg3.jpg', sizingMethod='scale')";
+}
 /*TRANING _ CONTACT*/
 #post2, #post4 {
 	/*background: #e17352;*/
@@ -189,17 +199,7 @@ a, a:hover, a:active {
 	-o-background-size: cover;
 	background-size: cover;}
 
-#post2 {
-	background: url(../img/bg4.jpg) no-repeat center center fixed;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg4.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg4.jpg', sizingMethod='scale')";
-}
 
-#post4 {
-	background: url(../img/bg3.jpg) no-repeat center center fixed;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg3.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg3.jpg', sizingMethod='scale')";
-}
 
 .post img.background{
 	top: 0;
