@@ -20,23 +20,6 @@ $( document ).ready(function() {
             topbar.removeClass('top-bar-top');
 		}
 
-        $('img.background').each(function(){
-            var p = $(this).parent();
-            var top_offset = p.offset().top-$(window).scrollTop();
-            var bot_offset = top_offset+p.outerHeight()-$(window).height();
-            if(top_offset>=0) {
-                $(this).css({
-                    top: top_offset
-                });
-                console.log($(this).css('top'));
-            } else {
-                $(this).css({
-                    top: 0
-                })
-                $(this).css('top');
-            } 
-        })
-
 	});
 
     $('.button.menu').click(function(){
