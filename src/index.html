@@ -13,8 +13,6 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <!--<script src="http://192.168.1.102:35729/livereload.js?snipver=1"></script>-->
-
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -29,7 +27,9 @@
             </style>
         <![endif]-->
         
-        <div id="post0" class="first-screen">
+        <div id="post0" data-slide=0 class="first-screen">
+            <!-- <div class="big-logo" data-stellar-ratio="0.35"></div>
+            <div class="slogan" data-stellar-ratio="0.6"> -->
             <div class="big-logo" data-stellar-ratio="0.35"></div>
             <div class="slogan" data-stellar-ratio="0.6">
                 We make it</br>
@@ -39,23 +39,24 @@
         </div>
 
         <div class="top-bar">
-                <div class="left" onclick="scrolltopost0();">
+            <div class="background"></div>
+                <div class="left" onclick="scrolltopost(0);">
                     <a href="#post0">
                     <div class="small-logo"></div>
                     <div class="brand">BKGM</div>
                     </a>
                 </div>
-                <ul class="right">
-                    <li class="button menu">Menu</li>
-                    <li class="button dropdown" onclick="scrolltopost1();"><a href="#post1">Services</a></li>
-                    <li class="button dropdown" onclick="scrolltopost2();"><a href="#post2">Training</a></li>
-                    <li class="button dropdown" onclick="scrolltopost3();"><a href="#post3">About us</a></li>
-                    <li class="button dropdown" onclick="scrolltopost4();"><a href="#post4">Contact</a></li>
+                <div class="button menu">Menu</div>
+                <ul class="right" reversed>
+                    <li class="button dropdown" onclick="scrolltopost(1);"><a href="#post1">Services</a></li>
+                    <li class="button dropdown" onclick="scrolltopost(2);"><a href="#post2">Training</a></li>
+                    <li class="button dropdown" onclick="scrolltopost(3);"><a href="#post3">About us</a></li>
+                    <li class="button dropdown" onclick="scrolltopost(4);"><a href="#post4">Contact</a></li>
                 </ul>
         </div>
         
         <!-- SERVICES -->
-        <div id="post1" class="post">
+        <div id="post1" data-slide=1 class="post">
             <div class="content services">
                 <div class="title">services</div>
                 
@@ -79,7 +80,7 @@
 
                 </div>
 
-                <div class="col col-2-3 col-right">
+                <div class="col col-2-3 col-right col-container">
                     <div class="row mininoic">mininoic<br>
                             <div class="description">A branch of BKGM</div>
                     </div>
@@ -117,7 +118,7 @@
 
         </div>
         <!-- TRANING -->
-        <div id="post2" class="post">
+        <div id="post2" data-slide=2 class="post">
             <img class="background" src="./img/bg4.jpg"/>
             <div class="content training">
                 <div class="title"><div>training</div></div>
@@ -135,7 +136,7 @@
 
                 </div>
 
-                <div class="col col-2-3 col-right">
+                <div class="col col-2-3 col-right col-container">
                     <div class="row col-full row-border-hidden">
                     </div>
                     <div class="col col-1-2 col-left">
@@ -172,7 +173,7 @@
             </div>
 
         </div>
-        <div id="post3" class="post">
+        <div id="post3" data-slide=3 class="post">
             <div class="content about">
                 <div class="title">about us</div>
                 <div class="bkgm">
@@ -204,7 +205,8 @@
                 </div>
             </div>
         </div>
-        <div id="post4" class="post">
+        <div id="post4" data-slide=4 class="post">
+            <img class="background" src="./img/bg4.jpg"/>
             <div class="content contact">
                 <div class="title">contact</div>
                 <div class="space"></div>
@@ -222,8 +224,8 @@
         
         <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-        <script src="js/vendor/jquery.stellar.min.js"></script>
-        <script src="js/vendor/jquery.nicescroll.min.js"></script>
+        <!-- <script src="js/vendor/jquery.stellar.min.js"></script>
+        <script src="js/vendor/jquery.nicescroll.min.js"></script> -->
 
         <script src="js/main.js"></script>
 

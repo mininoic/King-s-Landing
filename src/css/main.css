@@ -61,8 +61,6 @@ html, body {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 53px;
-	background: #222;
 	font-size: 16px;
 	color: #ebebeb;
 	text-transform: uppercase;
@@ -74,8 +72,24 @@ html, body {
 
     /* No support for these yet, use at own risk */
     -o-user-select: none;
-    user-select: none;  
+    user-select: none;
     box-shadow: 0px 0px 45px -10px #000;
+}
+
+.top-bar .background {
+	background: #222;
+	height:53px;
+	width:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: -1;
+}
+
+.top-bar-top {
+	position: fixed;
+	bottom: auto;
+	top: 0;
 }
 
 .top-bar .button {
@@ -85,6 +99,10 @@ html, body {
 .top-bar .left,.right {
 	margin: auto 20px;
 	height: 100%;
+}
+
+.top-bar .left {
+	height: 53px;
 }
 
 .top-bar .small-logo {
@@ -115,8 +133,8 @@ html, body {
 .right {
 	float: right;
 }
-.right .menu{
-	visibility: hidden;
+.top-bar .button.menu{
+	display: none;
 }
 
 ul, li {
@@ -413,32 +431,41 @@ a, a:hover, a:active {
 @media screen and (max-width: 810px){
 
 	.top-bar {
-		overflow: visible;
+		height: 53px;
 	}
-		
-	ul.right {
+
+	.top-bar .button.menu{
 		display: block;
-
-	}	
-	.right .menu{
-		visibility: visible;
-		text-align: center;
-		font-weight: bold;
-	}
-
-	.right .dropdown{
-		visibility: hidden;
-	}
-	.right:hover .dropdown{
-		visibility: visible;
-	}
-
-	.right li {
 		text-align: right;
-		background-color: #000;
+		font-weight: bold;
+		margin: auto 20px;
+		cursor: pointer;
+	}
+
+	.top-bar ul.right{
+		margin: 0;
+		width: 100%;
+	}
+
+	.top-bar.menu-on{
+		height: auto;
+	}
+
+	.top-bar ul.right li {
+		text-align: center;
+		background-color: #111;
 		float: none;
 		display: block;
+		-webkit-transform: all 0.3s ease;  
+    	transform: all 0.3s ease;  
+	}
 
+	.top-bar-top ul.right li {
+		background-color: rgba(1,1,1,0.9);
+	}
+
+	.top-bar ul.right li:hover {
+		background-color: #b74d1f;
 	}
 
 		.first-screen .slogan {
@@ -456,7 +483,8 @@ a, a:hover, a:active {
 			padding: 30px 50px;
 		}
 		.row-border-hidden {
-			padding-bottom: 0px;
+			padding: 0!important;
+			height: 0!important;
 		}
     	.col-full {
 			width: 100%;
@@ -482,6 +510,14 @@ a, a:hover, a:active {
 			width: 100%;
 		}
 
+		.col {
+			padding: 1em 0;
+		}
+
+		.col-container {
+			padding: 0!important;
+		}
+
 		.services .col1, .services .col2, .services .col3{
 			float: none;
 			margin-top: 170px;
@@ -489,12 +525,7 @@ a, a:hover, a:active {
 			color: #e17352;
 		}
 		.post img.background{
-			top: 0;
-			left: 0;
-			position: fixed;
-			/*width: 100%;*/
 			height: 100%;
-			z-index: -1;
 		}
 
 }
