@@ -76,6 +76,14 @@ html, body {
     box-shadow: 0px 0px 45px -10px #000;
 }
 
+@media (scroll-top: 10px) {
+	.top-bar {
+		postition: fixed;
+		top: 0;
+		bottom: auto;
+	}
+}
+
 .top-bar .background {
 	background: #222;
 	height:53px;

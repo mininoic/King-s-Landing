@@ -11,16 +11,38 @@ $( document ).ready(function() {
     preventDefault('.top-bar a');
     
     var topbar = $('.top-bar');
-    
-    $(window).scroll(function(e){ 
-		
-		if ($(this).height()-$(this).scrollTop() <= topbar.height()){
-            topbar.addClass('top-bar-top');
-		} else {
-            topbar.removeClass('top-bar-top');
-		}
 
-	});
+    
+
+    var ivScroll;
+    var evt = document.createEvent("Event");
+    evt.initEvent("scroll", true, true);
+
+    var dispatchScroll = function() {
+        window.dispatchEvent(evt);
+    };
+
+    var activateOnScroll = function() {
+        ivScroll = setInterval(dispatchScroll, 20);
+    }
+
+    var deactivateOnScroll = function() {
+        clearInterval(ivScroll);
+    }
+
+    if ("ontouchstart" in window) {
+        window.addEventListener("touchstart", activateOnScroll);
+        window.addEventListener("touchmove", dispatchScroll);
+        window.addEventListener("touchend", deactivateOnScroll);
+    }
+
+    window.addEventListener("scroll", function() {
+        if ($(window).height()-$(window).scrollTop() <= topbar.height()){
+            topbar.addClass('top-bar-top');
+        } else {
+            topbar.removeClass('top-bar-top');
+        }
+    });
 
     $('.button.menu').click(function(){
         if (topbar.height() == 53) {
