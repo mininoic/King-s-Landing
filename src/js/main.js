@@ -47,13 +47,13 @@ $( document ).ready(function() {
             topbar.removeClass('top-bar-top');
         }
         
-        p4b.css({
-            clip: "rect("+
-                (p4o-w.scrollTop())+"px,"+
-                w.width()+"px,"+
-                w.height()+"px,"+
-                0+"px)"
-        })
+        // p4b.css({
+        //     clip: "rect("+
+        //         (p4o-w.scrollTop())+"px,"+
+        //         w.width()+"px,"+
+        //         w.height()+"px,"+
+        //         0+"px)"
+        // })
 
     });
 
